@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BASE Brazilian Jiu-Jitsu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+
+    <!-- HEADER -->
+    <header class="navbar glass">
+      <div class="nav-left">
+        <a href="https://wa.me/5581995469896" target="_blank" aria-label="WhatsApp" class="nav-social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/reel/DTp7SOjjvVx/?igsh=MWxtNnhvaGhyam9ueg==" target="_blank"
+          aria-label="Instagram" class="nav-social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.487.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <a href="#">
+          <img src="baselogo2.PNG
+          " alt="Base Brazilian Jiu-Jitsu" class="logo">
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <nav class="nav desktop-nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#planos">Planos</a>
+          <a href="#localizacao">Localização</a>
+          <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental."
+            class="btn-main">Aula Experimental</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+    <div class="hero-banner">
+      <div class="hero-banner-overlay"></div>
+
+      <div class="hero-banner-content reveal">
+        <h2>Base Brazilian Jiu-Jitsu</h2>
+        <p>Disciplina • Evolução • Confiança</p>
+      </div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="hero-content">
+      <div class="hero-text reveal">
+
+        <h1>
+          Comece no Jiu-Jitsu<br>
+          <span>construa sua BASE</span>
+        </h1>
+
+        <p>
+          Treinos focados em disciplina, evolução real e confiança.
+          Aqui você começa do zero, no seu ritmo, com acompanhamento de verdade.
+        </p>
+
+        <ul class="benefits">
+          <li>Condicionamento físico completo</li>
+          <li>Confiança e foco mental</li>
+          <li>Técnica desde o primeiro treino</li>
+        </ul>
+
+        <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental.
+      " class="btn-main">
+          AGENDAR AULA EXPERIMENTAL
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= SOBRE A BASE ================= -->
+  <section id="sobre" class="sobre">
+
+    <div class="about-container">
+
+      <!-- TÍTULO -->
+      <div class="about-header reveal">
+        <span class="about-eyebrow">◆ Sobre a BASE</span>
+
+        <h2>
+          Tradição, disciplina<br>
+          <span>e evolução real no Jiu-Jitsu</span>
+        </h2>
+
+        <p>
+          A BASE Brazilian Jiu-Jitsu nasceu com um propósito claro:
+          formar pessoas fortes, confiantes e disciplinadas, muito além do tatame.
+        </p>
+      </div>
+
+      <!-- ESTATÍSTICAS -->
+      <section class="about-stats-wrapper">
+        <div class="about-stats">
+
+          <div class="stat-card reveal">
+            <strong class="stat-number" data-target="40">0</strong>
+            <span>+ Alunos Ativos</span>
+          </div>
+
+          <div class="stat-card reveal">
+            <strong class="stat-number" data-target="20">0</strong>
+            <span>+ Anos de Experiência</span>
+          </div>
+
+          <div class="stat-card reveal">
+            <strong class="stat-number" data-target="100">0</strong>
+            <span>% Foco em Evolução</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TEXTO -->
+      <div class="about-text reveal">
+        <p>
+          Na BASE, o Jiu-Jitsu vai além da técnica. Trabalhamos disciplina,
+          respeito, condicionamento físico e mental, criando um ambiente
+          seguro e profissional para iniciantes e atletas experientes.
+        </p>
+
+        <p>
+          Desde o início, a ideia nunca foi apenas ensinar golpes ou técnicas, mas construir uma base sólida — física e
+          mental — para que cada aluno evolua no seu ritmo, com segurança, acompanhamento real e método.
+
+          Na BASE, acreditamos que o Jiu-Jitsu é uma ferramenta de transformação.
+          Transforma o corpo, fortalece a mente e desenvolve a autoconfiança necessária para enfrentar desafios dentro e
+          fora do treino.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-btn">
+      <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental.
+      " class="btn-main">FAÇA PARTE DA BASE</a>
+    </div>
+
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= BENEFÍCIOS ================= -->
+  <section id="beneficios" class="benefits-section">
+    <div class="benefits-container">
+
+      <header class="benefits-header reveal">
+        <span class="benefits-eyebrow">◆ Por que treinar na BASE</span>
+        <h2>Benefícios que vão além<br><span>do tatame</span></h2>
+        <p>
+          Na BASE, o Jiu-Jitsu não é só técnica. É construção de caráter, confiança
+          e evolução constante — física e mental.
+        </p>
+      </header>
+
+      <div class="benefits-grid">
+
+        <div class="benefit-card reveal">
+          <i data-lucide="target" class="benefit-icon"></i>
+          <h3>Disciplina e Constância</h3>
+          <p>
+            Treinos estruturados que criam rotina, foco e comprometimento
+            dentro e fora do tatame.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="award" class="benefit-icon"></i>
+          <h3>Confiança Real</h3>
+          <p>
+            Evolua no seu ritmo e ganhe segurança física e mental para
+            enfrentar desafios reais.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="activity" class="benefit-icon"></i>
+          <h3>Condicionamento Completo</h3>
+          <p>
+            Força, resistência, mobilidade e cardio trabalhados de forma
+            inteligente e progressiva.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="users" class="benefit-icon"></i>
+          <h3>Ambiente de Respeito</h3>
+          <p>
+            Aqui você treina em um ambiente sério, sem ego, com respeito,
+            apoio e espírito de equipe.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="trending-up" class="benefit-icon"></i>
+          <h3>Evolução Técnica de Verdade</h3>
+          <p>
+            Metodologia clara, técnica desde o primeiro treino e acompanhamento
+            real do aluno.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="brain" class="benefit-icon"></i>
+          <h3>Preparação para a Vida</h3>
+          <p>
+            O Jiu-Jitsu ensina autocontrole, resiliência e mentalidade forte
+            para qualquer situação.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="shield" class="benefit-icon"></i>
+          <h3>Autodefesa Real</h3>
+          <p>
+            Muito além do esporte, o Jiu-Jitsu desenvolve técnicas eficazes de defesa pessoal, aumentando a segurança no
+            dia a dia.
+          </p>
+        </div>
+
+        <div class="benefit-card reveal">
+          <i data-lucide="wind" class="benefit-icon"></i>
+          <h3>Redução do Estresse</h3>
+          <p>
+            A prática regular ajuda a aliviar tensões, ansiedade e pressões do dia a dia, promovendo bem-estar mental.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= EQUIPE / PROFESSORES ================= -->
+  <section id="equipe" class="team-section">
+    <div class="team-container">
+      <header class="team-header reveal">
+        <span class="team-eyebrow">◆ Nossa Liderança</span>
+        <h2>Aprenda com quem vive o<br><span>Jiu-Jitsu diariamente</span></h2>
+        <p>Nossa equipe de instrutores é dedicada não apenas a ensinar a técnica pura, mas a formar pessoas de caráter e
+          disciplina fortes.</p>
+      </header>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-image-box">
+            <i data-lucide="user" class="placeholder-icon"></i>
+          </div>
+          <div class="team-info">
+            <h3>Wesley "Pop" Maxwell</h3>
+            <span class="team-role">Head Coach • Faixa Preta</span>
+            <p>Especialista em fundamentos, com anos de experiência dedicados ao tatame e ao desenvolvimento de nossos
+              alunos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= CADASTRO ================= -->
+  <section class="cadastro-section">
+    <div class="cadastro-container reveal">
+      <span class="cadastro-eyebrow">
+        Facilite sua matrícula
+      </span>
+      <h2>
+        Faça seu cadastro<br>
+        <span>e agilize sua entrada na BASE</span>
+      </h2>
+      <p>
+        Ao realizar seu cadastro antecipadamente, sua matrícula se torna muito mais rápida e prática. Assim, conseguimos
+        organizar melhor
+        seu atendimento e garantir uma experiência completa desde o primeiro treino.
+      </p>
+      <a href="https://publico.nextfit.com.br/externo/b629ecb7-40e3-4e9a-a930-7871556cd394" target="_blank"
+        class="btn-main cadastro-btn">
+        FAZER MEU CADASTRO
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= PLANOS ================= -->
+  <section id="planos" class="plans-section">
+    <div class="plans-container">
+
+      <header class="plans-header reveal">
+        <span class="plans-eyebrow">◆ Nossos Planos</span>
+        <h2>Escolha o plano ideal<br><span>para sua jornada</span></h2>
+        <p>
+          Independentemente do seu nível, a BASE tem um plano pensado
+          para sua evolução contínua.
+        </p>
+      </header>
+
+      <div class="plans-grid">
+
+        <!-- INICIANTES -->
+        <div class="plan-card plan-white reveal">
+          <h3>Iniciantes</h3>
+          <span class="plan-subtitle">Do zero ao primeiro passo</span>
+
+          <ul class="plan-features">
+            <li><span class="belt white"></span> Faixa Branca</li>
+            <li>Acompanhamento completo</li>
+            <li>Base técnica sólida</li>
+            <li>Condicionamento progressivo</li>
+          </ul>
+          <div class="plan-pricing">
+            <div class="price-option">
+              <span class="price-label">Mensal</span>
+              <strong class="price-value">R$ 229,99</strong>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-option highlight">
+              <span class="price-label">Anual</span>
+              <strong class="price-value">R$ 199,99</strong>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental.
+        " class="btn-main">Quero começar</a>
+        </div>
+
+        <!-- GRADUADOS -->
+        <div class="plan-card plan-blue featured reveal reveal-delay-1">
+          <span class="plan-badge">MAIS POPULAR</span>
+          <h3>Graduados</h3>
+          <span class="plan-subtitle">Evolução técnica avançada</span>
+
+          <ul class="plan-features">
+            <li><span class="belt blue"></span> Faixa Azul</li>
+            <li><span class="belt purple"></span> Faixa Roxa</li>
+            <li><span class="belt brown"></span> Faixa Marrom</li>
+            <li><span class="belt black"></span> Faixa Preta</li>
+            <li>Treinos técnicos e estratégicos</li>
+          </ul>
+          <div class="plan-pricing">
+            <div class="price-option">
+              <span class="price-label">Mensal</span>
+              <strong class="price-value">R$ 229,99</strong>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-option highlight">
+              <span class="price-label">Anual</span>
+              <strong class="price-value">R$ 199,99</strong>
+            </div>
+          </div>
+          <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental.
+        " class="btn-main">Treinar como graduado</a>
+        </div>
+
+        <!-- KIDS -->
+        <div class="plan-card plan-kids reveal reveal-delay-2">
+          <h3>Kids</h3>
+          <span class="plan-subtitle">Disciplina desde cedo</span>
+
+          <ul class="plan-features">
+            <li>Coordenação motora</li>
+            <li>Respeito e disciplina</li>
+            <li>Confiança e socialização</li>
+            <li>Metodologia lúdica</li>
+          </ul>
+          <div class="plan-pricing">
+            <div class="price-option">
+              <span class="price-label">Mensal</span>
+              <strong class="price-value">R$ 139,99</strong>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-option highlight">
+              <span class="price-label">Anual</span>
+              <strong class="price-value">R$ 115,99</strong>
+            </div>
+          </div>
+          <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental.
+        " class="btn-main">Plano Kids</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= DEPOIMENTOS ================= -->
+  <section id="depoimentos" class="testimonials-section">
+    <div class="testimonials-container">
+      <header class="testimonials-header reveal">
+        <span class="testimonials-eyebrow">◆ O que dizem sobre nós</span>
+        <h2>A evolução na prática<br><span>Histórias reais</span></h2>
+        <p>Veja como o treino na BASE tem transformado não apenas o preparo físico, mas a confiança de nossos alunos em
+          todos os aspectos.</p>
+      </header>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i
+              data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star"
+              class="star-icon"></i>
+          </div>
+          <p>"Entrei sem nunca ter feito artes marciais na vida. A paciência dos professores e a didática focada em
+            fundamentos me fizeram amar o esporte desde a primeira semana da aula experimental."</p>
+          <div class="testimonial-author">
+            <strong>Jorge Moura</strong>
+            <span>Aluno Iniciante</span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i
+              data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star"
+              class="star-icon"></i>
+          </div>
+          <p>"O que mais me impressionou foi o ambiente sem estrelismo ou ego. Todo mundo está ali para aprender e se
+            ajudar. Evoluí meu condicionamento e minha saúde mental absurdamente desde que comecei."</p>
+          <div class="testimonial-author">
+            <strong>Ezequiel</strong>
+            <span>Aluno Graduado</span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <div class="stars">
+            <i data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i
+              data-lucide="star" class="star-icon"></i><i data-lucide="star" class="star-icon"></i><i data-lucide="star"
+              class="star-icon"></i>
+          </div>
+          <p>"Trouxe meu filho para a turma Kids e ele mudou completamente na escola. Mais foco nos estudos, mais
+            disciplina nas tarefas de casa e muito respeito. Tornou-se um programa de família!"</p>
+          <div class="testimonial-author">
+            <strong>Mãe de aluno</strong>
+            <span>Turma Kids</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= LOCALIZAÇÃO ================= -->
+  <section id="localizacao" class="location-section">
+    <div class="location-container">
+
+      <header class="location-header reveal">
+        <span class="location-eyebrow">◆ Onde estamos</span>
+        <h2>Nossa localização<br><span>No Bairro Do Pina</span></h2>
+        <p>
+          Estamos em um espaço preparado para oferecer conforto,
+          segurança e o melhor ambiente para a prática do Jiu-Jitsu.
+        </p>
+      </header>
+
+      <div class="location-content">
+
+        <div class="location-info reveal">
+          <h3>BASE Brazilian Jiu-Jitsu</h3>
+
+          <p class="address">
+            Rua Carneiro Pessoa, 126<br>
+            Pina, Recife – Pernambuco
+          </p>
+
+          <p class="location-text">
+            A BASE conta com estrutura completa, ambiente organizado
+            e profissionais experientes para acompanhar sua evolução desde o
+            primeiro treino.
+          </p>
+
+          <div class="location-actions">
+            <a href="https://www.instagram.com/reel/DTp7SOjjvVx/?igsh=MWxtNnhvaGhyam9ueg==" target="_blank"
+              class="btn-main">
+              CONHEÇA A BASE
+            </a>
+          </div>
+        </div>
+
+        <div class="location-map reveal reveal-delay-1">
+          <iframe src="https://www.google.com/maps?q=Rua%20Carneiro%20Pessoa%20126%20Recife%20Pernambuco&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="faq-section">
+    <div class="faq-container">
+      <header class="faq-header reveal">
+        <span class="faq-eyebrow">◆ Perguntas Comuns</span>
+        <h2>Tire suas principais<br><span>dúvidas sobre a BASE</span></h2>
+      </header>
+
+      <div class="faq-grid reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            Nunca treinei arte marcial. Posso começar?
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Com certeza. Temos metodologias específicas para quem está começando do zero absoluto. Você não precisa
+              ter preparo físico prévio ou experiência para dar o primeiro passo; nós construiremos sua base juntos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Preciso comprar um kimono de imediato?
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Na aula experimental, você não precisa de kimono. Basta ir com uma roupa de ginástica confortável
+              (bermuda sem zíper, calça legging, camiseta). Após decidir iniciar conosco, orientaremos sobre a compra do
+              kimono oficial e padrões aceitos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Existe limite de idade para praticar o Jiu-Jitsu?
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>De forma alguma. O Jiu-Jitsu é completamente adaptável. Temos turmas desde crianças bem pequenas na turma
+              Kids, até adultos na melhor idade. O lema é respeitar os limites do seu próprio corpo durante todo o
+              processo esportivo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Como funciona a aula experimental?
+            <i data-lucide="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>É simples: basta clicar no botão de agendamento aqui na página, mandar uma mensagem no nosso WhatsApp pra
+              reservar sua vaga para o melhor dia, e comparecer! Nossa equipe vai receber você para conhecer o tatame, a
+              turma e os fundamentos básicos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIVISOR ================= -->
+  <div class="section-divider"></div>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-final">
+
+    <div class="cta-final-content reveal">
+
+      <h2>
+        Não espere se sentir pronto<br>
+        <span>É o treino que te prepara.</span>
+      </h2>
+
+      <p>
+        Um passo muda a rotina. O treino muda o resto.
+      </p>
+
+      <a href="https://wa.me/5581995469896?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental."
+        class="btn-main cta-final-btn">
+        AGENDAR AULA EXPERIMENTAL
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand reveal">
+        <img src="baselogo2.PNG" alt="Base Brazilian Jiu-Jitsu" class="footer-logo">
+        <p>Construindo sua BASE dentro e fora do tatame. Tradição, disciplina e evolução no coração de Recife.</p>
+      </div>
+
+      <div class="footer-links reveal reveal-delay-1">
+        <h4>Navegação</h4>
+        <nav>
+          <a href="#sobre">Nossa Essência</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#planos">Planos & Valores</a>
+          <a href="#faq">Dúvidas Comuns</a>
+        </nav>
+      </div>
+
+      <div class="footer-contact reveal reveal-delay-2">
+        <h4>Contato Dúvidas</h4>
+        <p><i data-lucide="map-pin"></i> Rua Carneiro Pessoa, 126 - Pina, Recife – PE</p>
+        <p><i data-lucide="phone"></i> (81) 99546-9896</p>
+        <a href="https://wa.me/5581995469896" class="footer-btn-whatsapp" target="_blank">
+          <i data-lucide="message-circle"></i> Falar via WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BASE Brazilian Jiu-Jitsu. Todos os direitos reservados. Cultivando a nova geração.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <a href="https://wa.me/5581995469896?text=Olá! Gostaria de agendar uma aula experimental." class="whatsapp-float"
+    target="_blank" aria-label="Falar no WhatsApp">
+    <span class="whatsapp-pulse"></span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+</body>
+
+</html>
